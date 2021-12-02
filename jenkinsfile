@@ -6,12 +6,10 @@ node {
         
     }
     stage('Build') {
-                bat "mvn clean test"
-    }
-    
-    stage('Package') {
                 bat "mvn package"
     }
+    
+   
     
     stage('Nexus') {
        nexusArtifactUploader artifacts: [[artifactId: 'nexus-jenkins',
