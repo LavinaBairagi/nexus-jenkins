@@ -17,6 +17,6 @@ node {
  type: 'war']], credentialsId: 'nexus', groupId: 'com.jenkins.nexus', 
 nexusUrl: 'localhost:8110', nexusVersion: 'nexus3',
  protocol: 'http', 
-repository: 'http://localhost:8110/repository/maven-central-repository/',
+repository: 'maven-central-repository',
  version: '0.0.1'    }
 }
