@@ -5,7 +5,12 @@ node {
        git 'https://github.com/LavinaBairagi/nexus-jenkins.git'
         
     }
+   
     stage('Build') {
+                bat "mvn clean test"
+    }
+    
+    stage('Package') {
                 bat "mvn package"
     }
     
