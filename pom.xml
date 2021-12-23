@@ -12,7 +12,17 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.java.version>1.8</project.java.version>
 	</properties>
-  
+	
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <url>http://localhost:8110/repository/maven-central-repository/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>http://localhost:8110/repository/maven-central-repository/</url>
+    </snapshotRepository>
+  </distributionManagement>
   
   <build>
     <!-- To define the plugin version in your parent POM -->
@@ -53,14 +63,5 @@
     
     </plugins>
   </build>
-  <distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <url>http://localhost:8110/repository/maven-central-repository/</url>
-    </repository>
-    <snapshotRepository>
-      <id>nexus</id>
-      <url>http://localhost:8110/repository/maven-central-repository/</url>
-    </snapshotRepository>
-  </distributionManagement>
+  
 </project>
