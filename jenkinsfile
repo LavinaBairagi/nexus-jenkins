@@ -11,7 +11,7 @@ node {
     }
     
     stage('Package') {
-                bat "mvn package deploy"
+                bat "mvn package"
     }
       stage('Deploy') {
                 bat "mvn deploy"
