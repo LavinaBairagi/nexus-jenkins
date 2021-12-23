@@ -13,10 +13,7 @@ node {
     stage('Package') {
                 bat "mvn package"
     }
-      stage('Deploy') {
-                bat "mvn deploy"
-    }
-    
+     
     
    
     
@@ -29,8 +26,11 @@ nexusUrl: 'localhost:8110', nexusVersion: 'nexus3',
 repository: 'maven-central-repository',
  version: '0.0.1'    }
  
- stage('Ansible'){
-        ansiblePlaybook( credentialsId: 'project-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory.inv', playbook: 'download.yml')
+ 
+  stage('Deploy') {
+                bat "mvn deploy"
+    }
+    
+ 
 
- }
 }
