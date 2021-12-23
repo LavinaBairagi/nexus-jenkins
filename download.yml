@@ -6,5 +6,5 @@
       artifact_id: nexus-jenkins
       repository_url: "http://localhost:8110/#browse/browse:maven-central-repository"
       username: admin
-      password: 12345
-      dest: /project
+      password: 123456
+      dest: /download
