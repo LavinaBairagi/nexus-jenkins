@@ -24,9 +24,6 @@ nexusUrl: 'host.docker.internal:8110', nexusVersion: 'nexus3',
 repository: 'maven-central-repository',
  version: '0.0.1'    }
  
-    stage('Deploy'){
-    sh "mvn deploy "
-    }
     
     stage('ansible-deploy'){
         
