@@ -19,7 +19,7 @@ node {
        nexusArtifactUploader artifacts: [[artifactId: 'nexus-jenkins',
  classifier: '', file: 'target/nexus-jenkins-0.0.1-SNAPSHOT.war',
  type: 'war']], credentialsId: 'nexus', groupId: 'com.jenkins.nexus', 
-nexusUrl: 'localhost:8110', nexusVersion: 'nexus3',
+nexusUrl: 'docker.host.internal:8110', nexusVersion: 'nexus3',
  protocol: 'http', 
 repository: 'maven-central-repository',
  version: '0.0.1'    }
