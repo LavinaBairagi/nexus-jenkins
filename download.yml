@@ -1,5 +1,5 @@
 -
- hosts: all
+ hosts: 172.17.0.3
  tasks:
   - maven_artifact:
       group_id: com.jenkins.nexus
