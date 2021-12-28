@@ -16,11 +16,11 @@
   <distributionManagement>
 	  <snapshotRepository>
       <id>nexus</id>
-      <url>http://localhost:8110/repository/maven-central-repository/</url>
+      <url>http://host.docker.internal:8110/repository/maven-central-repository/</url>
     </snapshotRepository>
     <repository>
       <id>nexus</id>
-      <url>http://localhost:8110/repository/maven-central-repository/</url>
+      <url>http://host.docker.internal:8110/repository/maven-central-repository/</url>
     </repository>
     
   </distributionManagement>
