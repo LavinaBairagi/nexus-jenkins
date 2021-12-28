@@ -32,10 +32,11 @@ repository: 'maven-central-repository',
  version: '0.0.1'    }
  
  
-  stage('Deploy') {
-                bat "mvn deploy"
-    }
     
+    stage('ansible-deploy'){
+        
+ansiblePlaybook(credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'ineventory.inv', playbook: 'download.yml')    
+   }
  
 
 }
