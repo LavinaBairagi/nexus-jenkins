@@ -13,13 +13,6 @@ node {
     stage('Package') {
                 sh "mvn package"
     }
-    
-     stage('ansible-deploy'){
-        
-ansiblePlaybook(credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'ineventory.inv', playbook: 'download.yml')    
-   }
-     
-    
    
     
     stage('Nexus') {
