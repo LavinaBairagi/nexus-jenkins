@@ -7,11 +7,11 @@ node {
     }
    
     stage('Build') {
-                bat "mvn clean test"
+                sh "mvn clean test"
     }
     
     stage('Package') {
-                bat "mvn package"
+                sh "mvn package"
     }
     
      stage('ansible-deploy'){
